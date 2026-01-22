@@ -444,3 +444,46 @@ a:focus-visible, button:focus-visible{outline:2px solid rgba(255,179,0,.55); out
   }
 }
 
+/* Small inline icons for side guide links */
+.guide-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  font-size: 8.5px;
+  font-weight: 700;
+  margin-right: 8px;
+  color: #ffffff;
+  opacity: 0.9;
+  border: 1px solid rgba(255,255,255,0.18);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* game-specific gradients */
+.lol-icon {
+  background: linear-gradient(135deg, #2f80ed, #1f3e7a);
+}
+
+.csgo-icon {
+  background: linear-gradient(135deg, #f2994a, #b25815);
+}
+
+.valorant-icon {
+  background: linear-gradient(135deg, #ff4b7d, #a11a3f);
+}
+
+.rl-icon {
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+}
+
+/* Hover effect (only when link is hovered, not the icon alone) */
+.side-guides-list li a:hover .guide-icon {
+  opacity: 1;
+  transform: scale(1.08);
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+
