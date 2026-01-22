@@ -31,6 +31,82 @@ a:focus-visible, button:focus-visible{outline:2px solid rgba(255,179,0,.55); out
   background: rgba(6, 22, 47, 0.55);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
+.brand-with-games{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.game-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.game-logo{
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:700;
+  text-transform:uppercase;
+  background:
+    radial-gradient(circle at 30% 0%, rgba(255,255,255,0.18), transparent),
+    rgba(6,22,47,0.85);
+  color:var(--text);
+  text-decoration:none;
+  opacity:0.85;
+  transition:
+    transform .16s ease,
+    box-shadow .16s ease,
+    opacity .16s ease,
+    border-color .16s ease;
+}
+
+.game-logo:hover{
+  transform: translateY(-1px) scale(1.03);
+  opacity:1;
+  border-color:rgba(255,255,255,0.32);
+  box-shadow:0 12px 30px var(--shadow);
+}
+
+/* small color flavor per game, optional but nice */
+.game-logo-lol{
+  background:
+    radial-gradient(circle at 30% 0%, rgba(255,255,255,0.22), transparent),
+    linear-gradient(135deg, #2f80ed, #1f3e7a);
+}
+
+.game-logo-csgo{
+  background:
+    radial-gradient(circle at 30% 0%, rgba(255,255,255,0.22), transparent),
+    linear-gradient(135deg, #f2994a, #b25815);
+}
+
+.game-logo-valorant{
+  background:
+    radial-gradient(circle at 30% 0%, rgba(255,255,255,0.22), transparent),
+    linear-gradient(135deg, #ff4b7d, #a11a3f);
+}
+
+.game-logo-rl{
+  background:
+    radial-gradient(circle at 30% 0%, rgba(255,255,255,0.22), transparent),
+    linear-gradient(135deg, #56ccf2, #2f80ed);
+}
+
+/* Mobile: don't squash everything */
+@media (max-width: 520px){
+  .brand-with-games{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+}
 
 .header-inner{
   max-width:1100px;
