@@ -390,3 +390,57 @@ a:focus-visible, button:focus-visible{outline:2px solid rgba(255,179,0,.55); out
 .grid-2x2 .card{
   height:100%;
 }
+
+/* RIGHT SIDE GUIDE BLOCK */
+.side-guides {
+  position: absolute;
+  right: -260px;
+  top: 0;
+  width: 240px;
+  padding: 16px;
+  background: rgba(10, 20, 40, 0.7);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
+}
+
+.side-guides-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.side-guides-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-guides-list li a {
+  color: var(--text);
+  font-size: 0.9rem;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity .16s ease, transform .16s ease, color .16s ease;
+}
+
+.side-guides-list li a:hover {
+  opacity: 1;
+  transform: translateX(4px);
+  color: #fff;
+}
+
+/* Responsive: move below content on mobile */
+@media (max-width: 900px) {
+  .side-guides {
+    position: static;
+    margin-top: 24px;
+    width: 100%;
+  }
+}
+
