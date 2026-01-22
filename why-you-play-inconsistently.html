@@ -9,24 +9,50 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header class="header">
+<header class="header">
   <div class="header-inner">
-    <div class="brand">
-      <span>Competitive Performance</span>
-      <span class="badge">SEO</span>
+    <div class="brand-with-games">
+      <div class="game-links" aria-label="Game-specific pages">
+        <a href="league-of-legends.html"
+           class="game-logo game-logo-lol"
+           aria-label="League of Legends ranked struggles page">
+          LoL
+        </a>
+        <a href="counter-strike-go.html"
+           class="game-logo game-logo-csgo"
+           aria-label="Counter-Strike ranked struggles page">
+          CS
+        </a>
+        <a href="valorant.html"
+           class="game-logo game-logo-valorant"
+           aria-label="Valorant ranked struggles page">
+          Val
+        </a>
+        <a href="rocket-league.html"
+           class="game-logo game-logo-rl"
+           aria-label="Rocket League ranked struggles page">
+          RL
+        </a>
+      </div>
+
+      <div class="brand">
+        <span>Competitive Performance</span>
+        <span class="badge">Site Map</span> <!-- change this per page -->
+      </div>
     </div>
 
     <nav class="nav" aria-label="Dashboard navigation">
-      <a href="./index.html">Home</a>
-      <a href="./performance-consistency-system.html">Flagship</a>
-      <a href="./in-session-reset-protocol.html">Reset</a>
-      <a class="active" href="./why-you-play-inconsistently.html">Why Inconsistent</a>
-      <a href="./how-to-be-consistent-in-ranked.html">How Consistent</a>
-      <a href="./why-warmups-dont-fix-inconsistency.html">Warmups</a>
-      <a href="./faq.html">FAQ</a>
+      <a class="active" href="index.html">Home</a> <!-- set active per page -->
+      <a href="performance-consistency-system.html">Flagship</a>
+      <a href="in-session-reset-protocol.html">Reset</a>
+      <a href="why-you-play-inconsistently.html">Why Inconsistent</a>
+      <a href="how-to-be-consistent-in-ranked.html">How Consistent</a>
+      <a href="why-warmups-dont-fix-inconsistency.html">Warmups</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </div>
 </header>
+
 
     <div class="bg-float-layer" aria-hidden="true">
   <!-- Crosshair -->
